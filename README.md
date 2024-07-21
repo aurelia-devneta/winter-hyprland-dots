@@ -9,3 +9,4 @@ mpris (For other media module if you do not want to use the custom module. Adjus
 mpd (See mpris)\
 sway (For swayng)\
 Catppuccin cursors\
+
