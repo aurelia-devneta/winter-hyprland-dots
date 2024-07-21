@@ -1,2 +1,11 @@
 # winter-hyprland-dots
-To be used in conjunction with my NixOS config files. Find them here https://github.com/aurelia-devneta/winter-nixos-config
+My personal dot files for Hyprland. Constantly a work in progress.
+
+Current dependencies
+Hyprland (duh)
+Waybar (Either waybar compiled with cava or waybar-cava on AUR)
+Cava
+mpris (For other media module if you do not want to use the custom module. Adjust waybar config accordingly)
+mpd (See mpris)
+sway (For swayng)
+Catppuccin cursors
