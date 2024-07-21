@@ -1,7 +1,7 @@
 # winter-hyprland-dots
 My personal dot files for Hyprland. Constantly a work in progress.
 
-Current dependencies
+Current dependencies:\
 Hyprland (duh)\
 Waybar (Either waybar compiled with cava or waybar-cava on AUR)\
 Cava\
