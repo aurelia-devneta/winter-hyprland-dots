@@ -1,0 +1,117 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["hyprland/workspaces", "hyprland/submap", "tray"],
+  "modules-center": ["custom/mpris_status", "clock", "cava"],
+  "modules-right": ["network", "pulseaudio", "cpu", "memory", "temperature", "custom/weather", "custom/power"],
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "format": "{name}"
+  },
+  "tray": {
+     "icon-size": 30,
+     "space": 10,
+     "show-passive-items": false
+  },
+  "cava": {
+  //        "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+          "framerate": 60,
+          "autosens": 1,
+  //        "sensitivity": 10,
+          "bars": 24,
+          "lower_cutoff_freq": 50,
+          "higher_cutoff_freq": 10000,
+          "method": "pipewire",
+          "source": "spotify",
+          "stereo": true,
+          "reverse": false,
+          "bar_delimiter": 0,
+          "monstercat": false,
+          "waves": false,
+          "noise_reduction": 0.77,
+          "input_delay": 2,
+          "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+          "actions": {
+                     "on-click-right": "mode"
+                     }
+  },
+  "custom/mpris_status": {
+      "format": "{}",
+      "exec": "~/.config/waybar/scripts/mpris_status.sh",
+      "interval": 1,
+      "return-type": "json"
+  },
+//  "mpris": {
+//	"format": "{player_icon} {dynamic}",
+//	"format-paused": "{status_icon} <i>{dynamic}</i>",
+//        "rotate": 0,
+//        "dynamic-order": ["artist", "title", "position", "length", "album"],
+//        "dynamic-importance-order": ["artist", "title", "position", "length", "album"],
+//        "max-length": 24,
+//        "scroll-step": 5.0,
+//	"player-icons": {
+//		"default": "▶",
+//		"mpv": "🎵"
+//	},
+//	"status-icons": {
+//		"paused": "⏸"
+//	},
+  	// "ignored-players": ["firefox"]
+//  },
+//  "mpd": {
+//      "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
+//      "format-disconnected": "Disconnected ",
+//      "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+//      "interval": 10,
+//      "consume-icons": {
+//          "on": " " // Icon shows only when "consume" is on
+//      },
+//      "random-icons": {
+//          "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
+//         "on": " "
+//      },
+//      "repeat-icons": {
+//        "on": " "
+//      },
+//      "single-icons": {
+//          "on": "1 "
+//      },
+//      "state-icons": {
+//          "paused": "",
+//          "playing": ""
+//      },
+//      "tooltip-format": "MPD (connected)",
+//      "tooltip-format-disconnected": "MPD (disconnected)"
+//  },
+  "clock": {
+    "format": "{:%Y-%m-%d %H:%M:%S}"
+  },
+  "network": {
+    "format-wifi": " {essid} {signalStrength}%",
+    "format-ethernet": " {ipaddr}"
+  },
+  "pulseaudio": {
+    "format": " {volume}%"
+  },
+  //"battery": {
+    //"format": "{capacity}% {icon}"
+  //},
+  "cpu": {
+    "format": " {usage}%"
+  },
+  "memory": {
+    "format": " {used:0.1f}G / {total:0.1f}G"
+  },
+  "temperature": {
+    "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon5/temp1_input",
+    "format": " {temperatureC}°C"
+  },
+  "custom/weather": {
+    "exec": "curl -s 'wttr.in/Sudbury?format=%t'",
+    "interval": 600
+  },
+  "custom/power": {
+    "format": " ",
+    "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#8aadf4 --button-background=#89b4fa --button-border=#002b33 --border-bottom=#002b33"
+  },
+}
