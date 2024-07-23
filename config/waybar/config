@@ -110,8 +110,12 @@
     "exec": "curl -s 'wttr.in/Sudbury?format=%t'",
     "interval": 600
   },
+//  "custom/power": {
+//    "format": " ",
+//    "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#8aadf4 --button-background=#89b4fa --button-border=#002b33 --border-bottom=#002b33"
+//  },
   "custom/power": {
-    "format": " ",
-    "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#8aadf4 --button-background=#89b4fa --button-border=#002b33 --border-bottom=#002b33"
+     "format": "",
+     "on-click": "~/.config/rofi/bin/powermenu"
   },
 }
