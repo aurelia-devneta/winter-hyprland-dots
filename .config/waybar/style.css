@@ -2,18 +2,18 @@
 * {
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
-  background-color: transparent; /* mantle */
-/*  color:  #c6d0f5;            #c6d0f5; White  text */
+  /* background-color: black;  mantle */
+  /*color:  white; */        /*   #c6d0f5; White  text */
 }
 
 window#waybar {
   background-color: transparent; /* crust */
-  border: transparent; /* overlay2 */
+  border: white; /* overlay2 */
 }
 
 .modules-right {
   background-color: transparent;
-  margin: 2px 0 0 0;
+  margin: 0 0 0 0;
   border-radius: 15px;
 }
 
@@ -25,18 +25,43 @@ window#waybar {
 
 .modules-left {
   background-color: #dabfff;       /*#232634;  Greyish Black*/
-  margin: 2px 0 0 0;
-  border-radius: 15px;
+  margin: 0 0 0 0;
+  border-radius: 0 15px 15px 0;
 }
 
-#hyprland-workspaces, #tray {
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+  color: white;
+}
+
+#workspaces, #tray {
   padding: 0 10px;
 }
 
-#hyprland-workspaces {
-  background-color: #dabfff;
+/*#workspaces {*/
+  /*background-color: #dabfff;*/
+  /*color: black;*/
+/*  border-radius: 0;*/
+/*}*/
+
+#workspaces button {
+  padding: 0 5px;
   color: black;
-  border-radius: 15px 0 0 15px;
+  /*border-bottom: 3px solid grey;*/
+  /*background: white;*/
+}
+
+#workspaces button:hover {
+  background: white;
+}
+
+#workspaces button.active {
+  background-color: transparent;
+  border-bottom: 3px solid white;
 }
 
 #tray {
@@ -47,7 +72,7 @@ window#waybar {
 
 #tray > .passive {
   /*-gtk-icon-effect: dim;*/
-  color: black;
+  color: white;
 }
 
 #tray > .needs-attention {
@@ -108,11 +133,11 @@ window#waybar {
   /*border-radius: 15px;*/
 }
 
-#temperature {
-  background-color: #d8bfd8; /* surface1 */
-  color: #313244; /* base */
+/*#temperature {*/
+ /* background-color: #d8bfd8; */ /* surface1 */
+ /* color: #313244; */ /* base */
   /*border-radius: 15px;*/
-}
+/*}*/
 
 #custom-weather {
   background-color: #ffb6c1; /* surface2 */
@@ -124,7 +149,7 @@ window#waybar {
   background-color: #ffdab9;
   color: #313244;
   padding: 6px 10px 6px 10px;
-  border-radius: 0 15px 15px 0;
+  /*border-radius: 0 15px 15px 0;*/
 }
 
 .separator {

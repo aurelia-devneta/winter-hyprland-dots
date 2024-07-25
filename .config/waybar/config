@@ -3,7 +3,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces", "hyprland/submap", "tray"],
   "modules-center": ["custom/mpris_status", "clock", "cava"],
-  "modules-right": ["network", "pulseaudio", "cpu", "memory", "temperature", "custom/weather", "custom/power"],
+  "modules-right": ["network", "pulseaudio", "cpu", "memory", "custom/weather", "custom/power"],
   "hyprland/workspaces": {
     "disable-scroll": true,
     "format": "{name}"
@@ -102,10 +102,10 @@
   "memory": {
     "format": " {used:0.1f}G / {total:0.1f}G"
   },
-  "temperature": {
-    "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon5/temp1_input",
-    "format": " {temperatureC}°C"
-  },
+//  "temperature": {
+//    "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon5/temp1_input",
+//    "format": " {temperatureC}°C"
+//  },
   "custom/weather": {
     "exec": "curl -s 'wttr.in/Sudbury?format=%t'",
     "interval": 600
