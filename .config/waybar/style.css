@@ -1,9 +1,10 @@
-/* Direct color definitions for Catppuccin theme */
 * {
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   background-color: transparent; /* mantle */
- /* color:  white; */       /*   #c6d0f5; White  text */
+  /* color:  white; */       /*   #c6d0f5; White  text */
+  /* background-color: black;  mantle */
+  /*color:  white; */        /*   #c6d0f5; White  text */
 }
 
 window#waybar {
@@ -15,6 +16,8 @@ window#waybar {
   background-color: transparent;
   margin: 2px 0 0 0;
   /*border-radius: 15px; */
+  margin: 0 0 0 0;
+  border-radius: 15px;
 }
 
 .modules-center {
@@ -27,6 +30,15 @@ window#waybar {
   background-color: #dabfff;       /*#232634;  Greyish Black*/
   margin: 2px 0 0 0;
   border-radius: 0 15px 15px 0;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+  color: white;
 }
 
 #workspaces, #tray {
@@ -42,8 +54,11 @@ window#waybar {
 #workspaces button {
   padding: 0 5px;
   color: black;
-  /*border-bottom: 3px solid grey;*/
-  /*background: white;*/
+/*#workspaces {*/
+  /*background-color: #dabfff;*/
+  /*color: black;*/
+/*  border-radius: 0;*/
+/*}*/
 }
 
 #workspaces button:hover {
@@ -53,15 +68,6 @@ window#waybar {
 #workspaces button.active {
   background-color: transparent;
   border-bottom: 3px solid white;
-}
-
-tooltip {
-  background: rgba(43, 48, 59, 0.5);
-  border: 1px solid rgba(100, 114, 125, 0.5);
-}
-
-tooltip label {
-  color: white;
 }
 
 #tray {
