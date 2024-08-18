@@ -1,0 +1,150 @@
+* {
+  font-family: "Fira Code Retina";
+  font-size: 16px;
+}
+
+window#waybar {
+  background-color: transparent;             /*#25253a;*/
+  /*border-bottom: 2px solid #ff007f;
+  border-top: 2px solid #ff007f;*/
+  padding: 5px 10px;
+}
+
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+  padding: 3px;
+  color: white;
+  background-color: #25253a;
+  margin: 2px 0px;
+  border-radius: 0px;
+  border-top: 3px solid #f5c2e7;
+  border-bottom: 3px solid #f5c2e7;
+  border-right: 0px solid #f5c2e7;
+  border-left: 0px solid #f5c2e7;
+}
+
+#workspaces button:hover {
+  background: #f6c2e7;
+}
+
+#workspaces button.active {
+  border-bottom: 5px solid #f5c2e7;
+  border-top: 5px solid #f5c2e7;
+  /*border-bottom: 3px solid white;*/
+  color: #ffffff;
+}
+
+#custom-swaync {
+  border-top: 3px solid #f5c2e7;
+  border-bottom: 3px solid #f5c2e7;
+  /*border-right: 3px solid #ff007f;
+  border-radius: 0 10px 10px 0;*/
+  background-color: #25253a;
+  margin: 2px 0px;
+  padding: 0 10px;
+}
+
+#tray {
+  /* background-color: #fffaa0;*/
+  padding: 5px;
+  margin: 2px 0px;
+  color: #25253a;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #25253a;
+  /*background-color: #8b0000;*/
+  border-right: 3px solid #f5c2e7;
+  border-top: 3px solid #f5c2e7;
+  border-bottom: 3px solid #f5c2e7;
+}
+
+#tray > .passive {
+  /*-gtk-icon-effect: dim;*/
+  color: #25253a;
+}
+
+#tray > .needs-attention {
+    /*-gtk-icon-effect: highlight;*/
+    color: #25253a;
+}
+
+#custom-mpris_status, #cava, #clock, #network, #pulseaudio, #temperature, #custom-weather {
+  padding: 0 10px;
+  /* margin: 0 5px; */
+}
+
+#custom-mpris_status, #cava, #clock, #network, #pulseaudio, #temperature, #custom-weather, #custom-power, #mpris {
+  background-color: #25253a;
+  margin: 2px 0px;
+  /*border: 2px solid #8b0000;*/
+  border-top: 3px solid #f5c2e7;
+  border-bottom: 3px solid #f5c2e7;
+}
+
+#network {
+  border-radius: 0px 0px 0 0px;
+  /*border-left: 3px solid #f5c2e7;*/
+}
+
+#custom-weather {
+  border-radius: 0px;
+}
+
+#temperature {
+  border-radius: 0px;
+}
+
+#pulseaudio-slider {
+    margin: 2px 0px;
+    border-top: 3px solid #f5c2e7;
+    border-bottom: 3px solid #f5c2e7;
+    background-color: #25253a;
+}
+
+#pulseaudio-slider trough {
+    min-height: 5px;
+    min-width: 80px;
+    border-radius: 5px;
+    background-color: black;
+}
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: #f5c2e7;
+}
+
+#pulseaudio {
+  border-radius: 0px;
+}
+
+#custom-power {
+  border-radius: 0px;
+  padding: 6px 15px 6px 10px;
+}
+
+/*#custom-mpris_status {
+  border-radius: 0px;
+}*/
+
+#mpris {
+  border-radius: 10px;
+  border: 3px solid #f5c2e7;
+  padding: 0 10px;
+}
+
+#cava {
+  border-radius: 10px 0px 0px 10px;
+  border-left: 3px solid #f5c2e7;
+}
+
+#clock {	
+  border-radius: 0px 0 0 0px;
+  /*border-left: 3px solid #ff007f;*/
+}
+
+.separator {
+  background-color: #62657f; /* overlay2 */
+  margin: 0 5px;
+}
