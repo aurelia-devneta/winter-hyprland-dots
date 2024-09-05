@@ -16,5 +16,6 @@ mpd\
 mpris\
 rofi\
 playerctl\
+swaync\
 \
 Media keys by default capture anything in playerctl. Ensure you disable media key capture in your browser if you do not want them effecting the browser. In firefox and firefox based browsers you can do this by going to ```about:config``` and setting ```media.hardwaremediakeys.enabled``` to ```false```.
